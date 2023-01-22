@@ -11,7 +11,7 @@ pr0fess0r_99=Client(
 
 CHAT_ID=int(os.environ.get("CHAT_ID", None))
 TEXT=os.environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour Auto Approved")
-APPROVED = os.environ.get("APPROVED_WELCOME", "on").lower()
+APPROVED = os.environ.get("APPROVED_WELCOME", "off").lower()
 
 @pr0fess0r_99.on_message(filters.private & filters.command(["start"]))
 async def start(client: pr0fess0r_99, message: Message):
